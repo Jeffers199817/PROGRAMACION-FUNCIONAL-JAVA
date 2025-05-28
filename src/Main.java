@@ -6,8 +6,40 @@ public class Main {
         Animal perro = new Animal() {
             @Override
             public void hacerSonido() {
+                System.out.println("guguaauu");
+            }
+
+            @Override
+            public void saludar() {
                 System.out.println("Hola soy un perrro guauu");
+
             }
         };
+
+        Animal gato = new Animal(){
+            @Override
+            public void hacerSonido() {
+                System.out.println("Miamiaumiau");
+
+            }
+            @Override
+            public void saludar(){
+                System.out.println("Hola soy un gato. Miamiaumiau");
+
+            }
+
+        };
+
+
+        Raza gatoRaza = ()-> System.out.println("Hola gato soy de raza gatubela");
+
+
+        perro.hacerSonido();
+        perro.saludar();
+
+        gato.saludar();
+        gato.hacerSonido();
+
+        gatoRaza.tipoRaza();
     }
 }
