@@ -6,7 +6,9 @@ public class Main {
         Animal perro = new Animal() {
             @Override
             public void hacerSonido() {
-                System.out.println("guguaauu");
+
+
+                System.out.println("guguaasdfsdfuu");
             }
 
             @Override
