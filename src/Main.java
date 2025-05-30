@@ -23,7 +23,25 @@ public class Main {
             public void hacerSonido() {
                 System.out.println("Miamiaumiau");
 
-            }
+            };
+
+
+            Animal gato1 = new Animal(){
+
+                @Override
+                public void hacerSonido(){
+                    System.out.println("Miamiaumiau");
+                }
+
+                @Override
+                public void saludar() {
+                    System.out.println("Miamiaumiau");
+                }
+            };
+
+
+
+
             @Override
             public void saludar(){
                 System.out.println("Hola soy un gato. Miamiaumiau");
@@ -37,9 +55,11 @@ public class Main {
 
 
         perro.hacerSonido();
+
         perro.saludar();
 
         gato.saludar();
+
         gato.hacerSonido();
 
         gatoRaza.tipoRaza();
